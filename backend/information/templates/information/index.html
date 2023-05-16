@@ -1,0 +1,76 @@
+{% extends 'information/base.html' %}
+{% load static %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<section class="section-color" style="height: 100vh">
+    <div id="tm-video-container">
+        <video autoplay muted loop id="tm-video">
+            <source src="/static/vendor/video/video.mp4" type="video/mp4">
+        </video>
+        <i id="tm-video-control-button" class="fas fa-pause"></i>
+    </div>
+
+    <div style="
+    margin-right: 5%;
+    float: right;
+    height: 60px;
+    width: 300px;
+    background: linear-gradient(to top left, #310062,#310062);
+    border-radius: 10px
+    " >
+        <div style="margin-top: 5px">
+            <div style="float: left; color: #6A5ACD; margin-left: 10px"
+            > <i class="fa-solid fa-3x fa-circle-info"></i></div>
+            <div style="color: white" align="center">
+                 Температура в Москве {{ current_temp }}°
+            </div>
+            <div style="color: white" align="center">
+                Сейчас {% now "j E H:i" %}
+            </div>
+        </div>
+    </div>
+
+    <div class="tm-container" style="padding-top: 200px">
+        <nav class="tm-main-nav">
+            <ul>
+                <li class="tm-nav-item">
+                    <a href="{% url 'information:projects' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Проекты
+                        <i style="color: #6A5ACD" class="fa-solid fa-5x fa-code"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="{% url 'information:stack' %}" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                        Стек технологий
+                        <i style="color: #6A5ACD" class="fa-solid fa-5x fa-microchip"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="#" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Магазин
+                        <i style="color: #6A5ACD" class="fa fa-5x fa-shopping-bag"></i>
+                        <p align="center">*демонстрация работы backend</p>
+                    </a>
+                </li>
+
+                <li class="tm-nav-item">
+                    <a href="{% url 'blog:blog' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Бложик
+                        <i style="color: #6A5ACD" class="fa-regular fa-5x fa-newspaper"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="{% url 'information:contact' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Контакты
+                        <i style="color: #6A5ACD" class="fa fa-5x fa-address-card"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,392 @@
+@import url("fonts/stylesheet.css")
+* {
+    margin: 0;
+    padding: 0;
+}
+body { margin: 0; height:100% }
+
+.main_brand {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.nav_brand {
+    background: rgba(255,255,255, 25);
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    border: none;
+}
+.icon {
+    height: 100%;
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: 3%;
+    overflow: auto;
+    background: rgba(255,255,255, 0.5);
+    width: 94%;
+    height: 100%;
+    border-radius: 50px
+}
+.container1 {
+    margin-top: 50px;
+    margin-left: 3%;
+    overflow: auto;
+    background: rgba(255,255,255, 0.5);
+    width: 94%;
+    height: 100%;
+    border-radius: 50px
+}
+
+@font-face {
+    font-family: 'FontName';
+    src: url('spaceagecyrillic_regular.ttf');
+}
+
+.text {
+    font-family: FontName, sans-serif;
+    font-size: 50px;
+}
+
+.text_icon {
+    font-family: "Canis Minor";
+    font-size: 80px;
+    text-decoration: none;
+    color: #0a023b;
+}
+.product-wrapper {
+    display: block;
+    width: 100%;
+    float: left;
+    transition: width .4s;
+}
+@media only screen and (min-width: 450px) {
+    .product-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product-wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .product-wrapper {
+        width: 33.333%;
+    }
+}
+.product {
+    display: block;
+    border-radius: 50px;
+    position: relative;
+    background: rgba(0,0,0, 0.5);
+    margin: 0 20px 20px 0;
+    text-decoration: none;
+    color: #474747;
+    z-index: 0;
+    height: auto;
+}
+footer {
+    margin-top: 30px;
+    background: rgba(255,255,255, 0.5);
+    bottom: 0;
+    width: auto;
+    height: 30px;
+}
+.name_product {
+    font-family: FontName, sans-serif;
+    color: white;
+    font-size: 40px;
+
+
+}
+.product-img {
+    margin-top: 20px;
+    width: 70%;
+    height: auto;
+}
+.price{
+    font-family: FontName;
+    color: white;
+    font-size: 30px;
+    vertical-align: center;
+}
+.basket{
+    margin-left: 12%;
+    width: 10%;
+
+}
+* {box-sizing: border-box}
+/* Поля ввода полной ширины */
+input[type=text], input[type=password] {
+    font-family: FontName;
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: rgba(255,255,255, 0.5);
+    border-radius: 50px;
+}
+
+/* Добавить цвет фона, когда входы получают фокус */
+input[type=text]:focus, input[type=password]:focus {
+    background: rgba(255,255,255, 0.5);
+    outline: none;
+}
+
+/* Установите стиль для всех кнопок */
+button {
+    background: rgba(0,128,0, 0.6);
+    border-radius: 50px;
+    font-family: FontName;
+    font-size: 25px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Поплавок очистить и кнопки регистрации и добавить равную ширину */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Добавить отступы к элементам контейнера */
+.container22 {
+    padding: 16px;
+}
+
+/* Модальное Содержание/Бокс */
+.modal-content {
+    margin: 5% auto 15% auto; /* 5% сверху, 15% снизу и по центру */
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Стиль горизонтальной линейки */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Измените стили для кнопки отмены и кнопки регистрации на дополнительных маленьких экранах */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+.textreg {
+    font-family: FontName;
+    color: black;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.btn {
+    width: 10%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+}
+
+
+.btn:hover {
+    opacity: 1;
+}
+
+.fb {
+    background-color: #3B5998;
+    color: white;
+    border-radius: 50px;
+    align-items: center
+}
+
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+    border-radius: 50px;
+}
+
+.google {
+    background-color: #dd4b39;
+    color: white;
+    border-radius: 50px;
+}
+
+.ssreg {
+    font-family: FontName;
+    text-decoration: none;
+    color: black;
+}
+.img-thumbnail {
+    width: 35%;
+    height: 35%;
+    border-radius: 50px;
+}
+
+.profile1 {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.imginbtn {
+    border: none;
+}
+.input-file {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: FontName;
+}
+.input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #419152;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+/* Focus */
+.input-file input[type=file]:focus + span {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+    background-color: #59be6e;
+}
+.input-file:active span {
+    background-color: #2E703A;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+    background-color: #eee;
+}
+
+.textbasket {
+    font-family: FontName;
+    font-size: 30px;
+}
+.textbasket1 {
+    font-family: FontName;
+    font-size: 30px;
+    margin-top: -30px;
+}
+.number {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+}
+.number input[type="number"] {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    font-family: FontName;
+    font-size: 20px;
+}
+.container2{
+    margin-top: 5px;
+    margin-left: 3%;
+    overflow: auto;
+    background: rgba(0,0,0, 0.5);
+    width: 94%;
+    height: 100%;
+    border-radius: 50px;
+    font-family: FontName;
+    font-size: 25px;
+    color: white;
+}
+.container3{
+    margin-top: 5px;
+    height: 50px;
+    margin-left: 3%;
+    overflow: auto;
+    width: 94%;
+    height: 100%;
+    border-radius: 50px;
+    font-family: FontName;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn2 {
+    width: auto;
+    background-color: rgba(0,128,0, 0.7) ;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+}

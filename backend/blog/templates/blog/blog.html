@@ -1,0 +1,41 @@
+
+{% extends 'information/base.html' %}
+{% load static %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div id="tm-video-container" style="margin-bottom: 0px" >
+    <video autoplay muted loop id="tm-video">
+      <source src= {% static 'vendor/video/cit.mp4' %} type="video/mp4">
+    </video>
+    <i id="tm-video-control-button" class="fas fa-pause"></i>
+  </div>
+  <div >
+    <center>
+      <div  style=" width: 98%;">
+        <h1 style=" color: black">Сборник моих фирменных рецептов!</h1>
+        <h2 style=" color: black">Ага, именно это.</h2>
+        <ul style="color: black; list-style-type: none ">
+          <hr size="3" color=black>
+            {% for publication in object_list %}
+              <li align="center" style=" width: 98%">
+                <p style="color: #000000">{{ publication.name }}</p>
+                <p><img src="{{ publication.image.url }}" width="30%" height="100%" ></p>
+                <p align="left" style="color: black"> {{ publication.text }}</p>
+              </li>
+              <hr size="3" color="#008000">
+            {% endfor %}
+
+
+
+        </ul>
+      </div>
+    </center>
+  </div>
+</section>
+{% endblock %}
