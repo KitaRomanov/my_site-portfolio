@@ -10,6 +10,8 @@ urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('information/', include('information.urls', namespace='information')),
     path('blog/', include('blog.urls', namespace='blog')),
+    path('cosmicstore/', include('store.urls', namespace='cosmostore')),
+    path('users/', include('users.urls', namespace='users')),
 
 ]
 

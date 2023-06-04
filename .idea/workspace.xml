@@ -1,27 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75895879-70c5-4e0e-8900-fe3182e0b04d" name="Changes" comment="" />
+    <list default="true" id="75895879-70c5-4e0e-8900-fe3182e0b04d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/media/products_images/image_16_PToywx0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/media/publication_images/ыыы.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/media/users_images/2928_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/404/img/rocket.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/cat.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/css/KellySlab-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/корабли/alienship2_96090.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/корабли/alienship_96122.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/корабли/spaceship-1_96204.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/корабли/spaceship-2_96223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/корабли/spaceship-3_96079.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/корабли/spaceship_96202.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image (12).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image (15).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image (16).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/fixtures/category.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/fixtures/prduct.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/fixtures/promo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/migrations/0002_auto_20230518_0011.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/migrations/0003_basket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/templates/store/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/templates/store/baskets.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/templates/store/main_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/store/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/templates/users/404_fo_users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/templates/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/templates/users/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/templates/users/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/migrations/0002_auto_20230508_2043.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/migrations/0002_auto_20230508_2043.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/migrations/0003_auto_20230508_2056.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/migrations/0003_auto_20230508_2056.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/templates/blog/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/templates/blog/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/common/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/common/weather_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/common/weather_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/templates/information/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/templates/information/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/templates/information/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/templates/information/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/templates/information/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/templates/information/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/templates/information/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/templates/information/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/templates/information/stack.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/templates/information/stack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/information/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/information/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/.idea/Сайт магазин.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/.idea/Сайт магазин.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/Login1.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/Login1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/css/store_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/css/store_main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/main_store.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/main_store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/5466.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/5466.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/jupiter.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/jupiter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/planet.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/planet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/корабли/alienship2_96090.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/alienship2_96090.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/корабли/alienship_96122.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/alienship_96122.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/корабли/spaceship-1_96204.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/spaceship-1_96204.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/корабли/spaceship-2_96223.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/spaceship-2_96223.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/корабли/spaceship-3_96079.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/spaceship-3_96079.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/корабли/spaceship_96202.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/spaceship_96202.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/a.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/b.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/d.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/e.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/e.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/h.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image (11).png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image (11).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image (12).png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/image_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image (13).png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image (13).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image (14).png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image (14).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image (15).png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/image_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image (16).png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/image_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image (17).png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/store/iconc/планеты/image (17).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/store/иконки/планеты/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/media/products_images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/vendor/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/vendor/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/vendor/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/vendor/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/vendor/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/vendor/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/vendor/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/vendor/css/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/vendor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/vendor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/vendor/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/vendor/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/vendor/stack.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/vendor/stack.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2PZGjEMX77NSIw8uckIIiU1tfNd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Никита/Desktop/My_site/backend/backend",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nikimine/Рабочий стол/обучение/My_site/backend/backend&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,6 +172,9 @@
       <updated>1683657322801</updated>
       <workItem from="1683657323912" duration="102000" />
       <workItem from="1683657435842" duration="7000" />
+      <workItem from="1685910485208" duration="58000" />
+      <workItem from="1685910564744" duration="29000" />
+      <workItem from="1685910923623" duration="134000" />
     </task>
     <servers />
   </component>

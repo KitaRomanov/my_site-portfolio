@@ -800,3 +800,43 @@ body{
         transform: scale(1.2);
     }
 }
+
+
+
+.cursor{
+    position: relative;
+    width:105%;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size:19px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color: white;
+}
+.cursor:hover{
+    text-decoration: none;
+}
+
+.typewriter-animation {
+  animation:
+    typewriter 3s steps(50) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
+
+
+
+
+
+

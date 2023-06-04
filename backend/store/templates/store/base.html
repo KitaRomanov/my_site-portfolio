@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href=" {% static 'store/css/store_main.css' %}">
+    <link rel="stylesheet" href="{% static 'store/fonts/stylesheet.css' %}">
+    <style>body { margin: 0; }</style>
+
+</head>
+<body class="main_brand" background="{% static 'store/back.jpg' %}">
+<div class="nav_brand">
+           <a href="{% url 'store:index' %}"><img class="icon" src=" {% static 'store/cosmicstore.png' %}"></a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'users:logout' %}" ><i class="fa-solid fa-4x fa-right-from-bracket " style="float: right; margin-right: 5%; color: black"></i></a>
+                <a href="{% url 'users:profile' user.id %}" ><img src="{% static 'store/icon_lc.png' %}" class="icon" style="float: right; margin-right: 2%"></a>
+            {% else %}
+                <a href="{% url 'users:login' %}" ><img src="{% static 'store/icon_lc.png' %}" class="icon" style="float: right; margin-right: 5%"></a>
+            {% endif %}
+
+</div>
+</body>
+{% block content %} {% endblock %}
+
+                <script src="https://unpkg.com/@popperjs/core@2"></script>
+                <script src="https://unpkg.com/tippy.js@6"></script>
+                <script type="text/javascript" src="{% static "store/js/script.js" %}"></script>
+                <script src="https://kit.fontawesome.com/01de7652a2.js" crossorigin="anonymous"></script>
+                <script>
+                    $(function(){
+	                    $("#message").delay(5000).slideUp(300);
+                    });
+                </script>
+
+
+</html>

@@ -1,0 +1,45 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div align="center">
+        {% if form.errors %}
+            <div class="alerts" id="message" align="left">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';"> <i class="fa-solid fa-xmark"> </i> </span>
+                <span>{{ form.errors }}</span>
+            </div>
+        {% endif %}
+</div>
+
+<div class="container">
+  <p align="center" class="text"> Внесите себя в систему космо торговли</p>
+  <form class="modal-content" action="{% url 'users:registration' %}" method="post">
+      {% csrf_token %}
+
+      <label for="{{ form.email.id_for_label }}"><b class="textreg" >Email
+      </b></label>
+      {{ form.email }}
+
+      <label for="{{ form.username.id_for_label }}"><b class="textreg">Никнейм</b></label>
+      {{ form.username }}
+
+      <label for="{{ form.last_name.id_for_label }}"><b class="textreg">Планета</b></label>
+      {{ form.last_name }}
+
+      <label for="{{ form.first_name.id_for_label}}"><b class="textreg">Ваше имя</b></label>
+      {{ form.first_name }}
+
+      <label for="{{ form.password1.id_for_label }}"><b class="textreg">Пароль</b></label>
+      {{ form.password1 }}
+
+      <label for="{{ form.password2.id_for_label }}"><b class="textreg">Повторить пароль</b></label>
+      {{ form.password2 }}
+
+      <div class="clearfix" style="margin-bottom: -100px">
+          <button type="submit" class="btn_enter rounded"><span class="text-green">Регистрация</span></button>
+      </div>
+  </form>
+</div>
+
+{% endblock %}

@@ -32,22 +32,24 @@ body { margin: 0; height:100% }
     overflow: auto;
     background: rgba(255,255,255, 0.5);
     width: 94%;
-    height: 100%;
+    height: 110%;
+    padding: 20px;
     border-radius: 50px
 }
 .container1 {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 3%;
     overflow: auto;
     background: rgba(255,255,255, 0.5);
     width: 94%;
-    height: 100%;
+    height: 110%;
+    padding: 20px;
     border-radius: 50px
 }
 
 @font-face {
     font-family: 'FontName';
-    src: url('spaceagecyrillic_regular.ttf');
+    src: url('KellySlab-Regular.ttf');
 }
 
 .text {
@@ -97,23 +99,27 @@ body { margin: 0; height:100% }
 }
 footer {
     margin-top: 30px;
-    background: rgba(255,255,255, 0.5);
+    background: rgba(255,255,255, 0.8);
     bottom: 0;
     width: auto;
-    height: 30px;
+    height: 100%;
 }
 .name_product {
     font-family: FontName, sans-serif;
     color: white;
     font-size: 40px;
-
-
 }
 .product-img {
     margin-top: 20px;
     width: 70%;
     height: auto;
 }
+
+.product-img:hover {
+    transform: scale(1.5);
+}
+
+
 .price{
     font-family: FontName;
     color: white;
@@ -146,49 +152,30 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 /* Установите стиль для всех кнопок */
-button {
-    background: rgba(0,128,0, 0.6);
-    border-radius: 50px;
-    font-family: FontName;
-    font-size: 25px;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.8;
 
-}
 
-button:hover {
-    opacity:1;
-}
 
-/* Поплавок очистить и кнопки регистрации и добавить равную ширину */
 .cancelbtn, .signupbtn {
     float: left;
     width: 50%;
 }
 
-/* Добавить отступы к элементам контейнера */
+
 .container22 {
     padding: 16px;
 }
 
-/* Модальное Содержание/Бокс */
+
 .modal-content {
-    margin: 5% auto 15% auto; /* 5% сверху, 15% снизу и по центру */
-    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+    margin: 5% auto 15% auto;
+    width: 80%;
 }
 
-/* Стиль горизонтальной линейки */
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
 
-}
 
 .close:hover,
 .close:focus {
@@ -197,7 +184,6 @@ hr {
 }
 
 
-/* Измените стили для кнопки отмены и кнопки регистрации на дополнительных маленьких экранах */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
         width: 100%;
@@ -267,59 +253,6 @@ hr {
 .imginbtn {
     border: none;
 }
-.input-file {
-    position: relative;
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: FontName;
-}
-.input-file span {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    font-size: 14px;
-    vertical-align: middle;
-    color: rgb(255 255 255);
-    text-align: center;
-    border-radius: 4px;
-    background-color: #419152;
-    line-height: 22px;
-    height: 40px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border: none;
-    margin: 0;
-    transition: background-color 0.2s;
-}
-.input-file input[type=file] {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    display: block;
-    width: 0;
-    height: 0;
-}
-
-/* Focus */
-.input-file input[type=file]:focus + span {
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-
-/* Hover/active */
-.input-file:hover span {
-    background-color: #59be6e;
-}
-.input-file:active span {
-    background-color: #2E703A;
-}
-
-/* Disabled */
-.input-file input[type=file]:disabled + span {
-    background-color: #eee;
-}
 
 .textbasket {
     font-family: FontName;
@@ -330,25 +263,7 @@ hr {
     font-size: 30px;
     margin-top: -30px;
 }
-.number {
-    display: inline-block;
-    position: relative;
-    width: 100px;
-}
-.number input[type="number"] {
-    display: block;
-    height: 32px;
-    line-height: 32px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
-    -moz-appearance: textfield;
-    -webkit-appearance: textfield;
-    appearance: textfield;
-    font-family: FontName;
-    font-size: 20px;
+
 }
 .container2{
     margin-top: 5px;
@@ -356,7 +271,7 @@ hr {
     overflow: auto;
     background: rgba(0,0,0, 0.5);
     width: 94%;
-    height: 100%;
+    height: 300px;
     border-radius: 50px;
     font-family: FontName;
     font-size: 25px;
@@ -389,4 +304,232 @@ hr {
     font-size: 17px;
     line-height: 20px;
     text-decoration: none; /* remove underline from anchors */
+}
+.login{
+    font-family: FontName;
+    font-size: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.btn_pagin {
+    width: 10%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+
+.tippy-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-family: FontName;
+  font-size: 20px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.img_fo_footer{
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.img_fo_footer:hover{
+    opacity: 0.8;
+}
+
+.alerts {
+    margin-top: 100px;
+    margin-bottom: -150px;
+    background: rgba(255, 0, 0, 0.6);
+    width: 50%;
+    font-family: FontName;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    opacity: 1;
+    transition: opacity 1s, visibility 0s;
+}
+
+
+
+.closebtn {
+    margin-right: -15px;
+    margin-top: -15px;
+    float: right;
+    color: #DC5050;
+    background: rgba(255,255,255, 0.7);
+    border-radius: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.closebtn:hover {
+    background: rgba(255,255,255, 0.9);
+}
+
+input[type=file] {
+  width: 50%;
+  max-width: 100%;
+  color: black;
+  padding: 5px;
+  background: rgba(0, 128, 0, 0.2);
+  border-radius: 1000px;
+    font-size: 15px;
+    font-family: Arial;
+
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: rgba(0,128,0, 0.7);
+  padding: 10px 20px;
+  border-radius: 1000px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+    font-family: Arial;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: green;
+}
+
+input[type=file]:hover {
+    opacity:1;
+}
+
+
+
+.btn_enter {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  position: relative;
+    font-family: FontName;
+    width: 80%;
+
+}
+.btn_enter::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn_enter .btn-text {
+  color: white;
+  mix-blend-mode: difference;
+}
+.btn_enter:hover::before {
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+}
+.btn_enter.rounded {
+  border-radius: 100px;
+    background: rgba(0, 128, 0, 0.2);
+}
+.btn_enter.rounded .text-green {
+  color: black;
+  mix-blend-mode: darken;
+}
+.btn_enter.rounded::before {
+  border-radius: 50px;
+  width: 25%;
+  background: rgba(0, 128, 0, 0.6);
+}
+.btn_enter.rounded:hover::before {
+  background:rgba(0, 128, 0, 0.6);
+  width: 100%;
+}
+
+
+
+.basket_remove {
+    float: right;
+    margin-right: 50px;
+    color: rgba(0,0,0, 0.8);
+
+}
+.basket_remove:hover{
+    color: rgba(0,0,0, 0.5);
+}
+
+.product_in{
+    background: rgba(255,255,255, 0.5);
+    display: block;
+    border-radius: 60px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    height:100%;
+}
+
+
+
+.number {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+    background: rgba(255,255,255, 0.5);
+    border-radius: 50px;
+    font-family: FontName;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.number input[type="number"] {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+@font-face {
+    font-family: 'Font404';
+    src: url('RubikWetPaint-Regular.ttf');
+}
+.text404{
+    font-family: Font404;
+    font-size: 100px;
+
+}
+.text404t{
+    font-family: FontName;
+    font-size: 30px;
+
+}
+.img404{
+    width: 60%;
+    height: auto;
+}
+.text404s{
+    font-family: Font404;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.text404s:hover{
+    text-decoration: none;
+    color: rgba(0,0,0, 0.5);
 }

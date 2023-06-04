@@ -1,0 +1,47 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% block content %}
+    {% if request.user.id == user.id %}
+<div class="container">
+  <h1 class="text" align="center">Ваш профиль в системе</h1>
+  <form class="modal-content" action="{% url 'users:profile' user.id %}" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+    <div align="center">
+      <img
+           src="{% if user.image %} {{ user.image.url }} {% else %} {% static 'store/cat.jfif' %} {% endif %}"
+           class="img-thumbnail">
+    </div>
+    <div align="center">
+      <label for ="{{ image.id_for_label}}" class="upload-file__label"></label>
+        {{ form.image }}
+    </div>
+
+    <label for="{{ form.email.id_for_label }}"><b class="textreg"> Email</b></label>
+    {{ form.email }}
+
+    <label for="{{ username.id_for_label}}"><b class="textreg">Никнейм</b></label>
+    {{ form.username }}
+
+    <label for="{{ form.last_name.id_for_label }}"><b class="textreg">Планета</b></label>
+    {{ form.last_name }}
+
+    <label for="{{ form.first_name.id_for_label }}"><b class="textreg">Ваше имя</b></label>
+    {{ form.first_name }}
+
+    <div class="clearfix" align="center">
+        <button type="submit" class="btn_enter rounded" style="margin-bottom: -100px"><span class="text-green">Сохранить</span></button>
+    </div>
+  </form>
+</div>
+<div class="container" style="margin-top: 100px">
+    {% include 'store/baskets.html' %}
+</div>
+<footer>
+
+</footer>
+
+
+{% else %}
+    {% include 'users/404_fo_users.html' %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% load static %}
+<div style="
+background: #fff;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+">
+    <div align="center">
+        <span style="float: left; margin-left: 5%; margin-right: -5%"><img class="img404" src=" {% static '404/img/rocket.gif'%}"></span>
+        <span style="float: right; margin-left: -5%; margin-right: 5%">
+            <p style=" margin-bottom: -5px" align="center" class="text404">404</p>
+            <p class="text404t">У Вас нет доступа к данной информации</p>
+            <a style="text-decoration: none" href="{% url 'store:index' %}"><p class="text404s">Вернуться назад</p></a>
+        </span>
+    </div>
+</div>
