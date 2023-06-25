@@ -12,6 +12,7 @@ urlpatterns = [
     path('blog/', include('blog.urls', namespace='blog')),
     path('cosmicstore/', include('store.urls', namespace='cosmostore')),
     path('users/', include('users.urls', namespace='users')),
+    path('accounts/', include('allauth.urls')),
 
 ]
 
