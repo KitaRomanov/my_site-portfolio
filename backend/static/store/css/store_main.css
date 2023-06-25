@@ -240,8 +240,8 @@ hr {
     color: black;
 }
 .img-thumbnail {
-    width: 35%;
-    height: 35%;
+    width: 50%;
+    height: 50%;
     border-radius: 50px;
 }
 
@@ -413,11 +413,9 @@ input[type=file]:hover {
 
 
 .btn_enter {
-  margin: 20px auto;
-  border: none;
-  padding: 10px 44px;
-  font-size: 36px;
-  position: relative;
+    border: none;
+    font-size: 36px;
+    position: relative;
     font-family: FontName;
     width: 80%;
 
@@ -461,8 +459,7 @@ input[type=file]:hover {
 
 
 .basket_remove {
-    float: right;
-    margin-right: 50px;
+    margin-left: 50px;
     color: rgba(0,0,0, 0.8);
 
 }

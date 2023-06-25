@@ -1,9 +1,9 @@
-from django.shortcuts import render, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import HttpResponseRedirect
 from django.views.generic.list import ListView
 
 from common.views import TitleMixin
-from store.models import ProductCategory, Product, Basket
+from store.models import Basket, Product
 
 
 class ProductsListView(TitleMixin, ListView):

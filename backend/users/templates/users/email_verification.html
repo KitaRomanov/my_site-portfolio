@@ -1,0 +1,17 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% block content %}
+<div style="
+background: #fff;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+">
+    <div align="center">
+        <p class="text404t">Ваша учетная запись успешно подтверждена!</p>
+        <a style="text-decoration: none" href="{% url 'store:index' %}"><p class="text404s">Вернуться назад</p></a>
+        <img width="20%" src="{% static 'store/alien-dance.gif' %}">
+    </div>
+</div>
+{% endblock %}

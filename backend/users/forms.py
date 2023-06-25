@@ -1,7 +1,9 @@
 from django import forms
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm,  UserChangeForm
+from django.contrib.auth.forms import (AuthenticationForm, UserChangeForm,
+                                       UserCreationForm)
 
 from users.models import User
+from users.tasks import send_email_verification
 
 
 class UserLoginForm(AuthenticationForm):
@@ -18,7 +20,7 @@ class UserLoginForm(AuthenticationForm):
 class UserRegistrationForm(UserCreationForm):
     first_name = forms.CharField(widget=forms.TextInput(attrs={
         'placeholder': 'Ваше имя'}))
-    last_name = forms.CharField(widget=forms.TextInput(attrs={
+    planet = forms.CharField(widget=forms.TextInput(attrs={
         'placeholder': 'с какой вы планеты'}))
     username = forms.CharField(widget=forms.TextInput(attrs={
         'placeholder': 'Введите ваш никнейм'}))
@@ -31,7 +33,12 @@ class UserRegistrationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'username', 'email', 'password1', 'password2')
+        fields = ('first_name', 'planet', 'username', 'email', 'password1', 'password2')
+
+    def save(self, commit=True):
+        user = super(UserRegistrationForm, self).save(commit=True)
+        send_email_verification.delay(user.id)
+        return user
 
 
 class UserProfileForm(UserChangeForm):

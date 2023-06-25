@@ -1,8 +1,8 @@
 {% if baskets %}
 
       <div align="center">
-         <p class="text" style="margin-bottom: 0">Корзина </p>
-            <p class="text" style="margin-top: 0">Всего товаров - {{ baskets.total_quantity }} шт.</p>
+         <p class="text" style="margin-bottom: 0; font-size: 30px">Корзина </p>
+            <p class="text" style="margin-top: 0; font-size: 30px">Всего товаров - {{ baskets.total_quantity }} шт.</p>
 
 
           {% for basket in baskets %}
@@ -15,11 +15,10 @@
                       <ul style="list-style-type: none; padding: 0">
                         <li>
                           <div  align="center">
-                                  <input class="number" type="number" name="basketID" min="0"
-                                         value="{{ basket.quantity }}">
+                                  <p class="textbasket1">{{ basket.quantity }}</p>
                           </div>
-                            <div style="margin-top: -40px">
-                                <span class="textbasket" style="float: left; margin-left: 50px">{{ basket.sum }} ♅</span>
+                            <div>
+                                <span class="textbasket" >{{ basket.sum }} ♅</span>
                                 <span><a href="{% url 'store:basket_remove' basket.id %}" class="basket_remove">
                                   <i class="fas fa-2x fa-trash"></i></a>
                                 </span>
@@ -31,11 +30,11 @@
             </div>
           {% endfor %}
 
-        <div class="container1" style="border-radius: 1000px; margin-top: 80px">
+        <div class="container1" style="border-radius: 60px; margin-top: 5px; height: 160px">
           <div>
-            <p class="textbasket">Итого</p>
-            <p class="textbasket">{{ baskets.total_sum }} ♅ </p>
-              <button type="submit" class="btn_enter rounded" style="margin-bottom: -100px"><span class="text-green">Оформить заказ</span></button>
+            <p class="textbasket" style="margin-bottom: 0; margin-top: 0">Итого</p>
+            <p class="textbasket" style="margin-bottom: 0; margin-top: 0">{{ baskets.total_sum }} ♅ </p>
+              <button type="submit" class="btn_enter rounded" style="margin-bottom: 0"><span class="text-green">Оформить заказ</span></button>
           </div>
         </div>
 

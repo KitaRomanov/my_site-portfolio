@@ -1,5 +1,4 @@
 from django.views.generic.base import TemplateView
-from django.shortcuts import render
 
 from common.views import TitleMixin
 from common.weather_time import WeatherMixin
@@ -23,6 +22,3 @@ class ProjectsView(TitleMixin, TemplateView):
 class StackView(TitleMixin, TemplateView):
     template_name = 'information/stack.html'
     title = 'Стак технологий'
-
-
-
