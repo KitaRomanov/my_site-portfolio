@@ -539,7 +539,7 @@ address {
 }
 
 @media (max-width: 1264px) {
-    .tm-main-nav ul { 
+    .tm-main-nav ul {
         max-width: 976px;
     }
 }
@@ -552,12 +552,12 @@ address {
 
 @media (max-width: 776px) {
     .tm-main-nav ul {
-        max-width: 488px;        
+        max-width: 488px;
     }
 }
 
 @media (max-width: 532px) {
-    .tm-main-nav ul { 
+    .tm-main-nav ul {
         max-width: 244px;
     }
 }

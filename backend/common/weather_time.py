@@ -1,4 +1,6 @@
 import pyowm
+from pyowm.utils import config
+from pyowm.utils import timestamps
 
 
 def weather():

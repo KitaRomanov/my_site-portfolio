@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block content %}
-<section class="section-color" style="height: 100vh">
+<section class="section-color" style="height: 100%">
+<div align="center">
     <div id="tm-video-container">
         <video autoplay muted loop id="tm-video">
             <source src="/static/vendor/video/video.mp4" type="video/mp4">
@@ -34,10 +35,10 @@
         </div>
     </div>
 
-    <div class="tm-container" style="padding-top: 200px">
-        <nav class="tm-main-nav">
+    <div class="tm-container" style="padding-top: 200px; margin: 0; padding-bottom: 50px">
+        <nav class="tm-main-nav" style="height: 100vh; min-height: 100%">
             <ul>
-                <li class="tm-nav-item">
+                <li class="tm-nav-item" >
                     <a href="{% url 'information:projects' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
                         <span class="cursor typewriter-animation">
                             Проекты
@@ -82,5 +83,6 @@
             </ul>
         </nav>
     </div>
+</div>
 </section>
 {% endblock %}
