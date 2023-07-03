@@ -6,16 +6,11 @@
 {% endblock %}
 
 {% block content %}
-<section class="section-color" style="height: 100%">
-<div align="center">
-    <div id="tm-video-container">
-        <video autoplay muted loop id="tm-video">
-            <source src="/static/vendor/video/video.mp4" type="video/mp4">
-        </video>
-        <i id="tm-video-control-button" class="fas fa-pause"></i>
-    </div>
+<section style="height: 100%">
+
 
     <div style="
+    margin-top: 10%;
     margin-right: 5%;
     float: right;
     height: 60px;
@@ -36,9 +31,9 @@
     </div>
 
     <div class="tm-container" style="padding-top: 200px; margin: 0; padding-bottom: 50px">
-        <nav class="tm-main-nav" style="height: 100vh; min-height: 100%">
+        <nav class="tm-main-nav" style="height: 100%">
             <ul>
-                <li class="tm-nav-item" >
+                <li class="tm-nav-item" style="border-radius: 50px; border: none">
                     <a href="{% url 'information:projects' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
                         <span class="cursor typewriter-animation">
                             Проекты
@@ -46,7 +41,7 @@
                         <i style="color: #6A5ACD" class="fa-solid fa-5x fa-code"></i>
                     </a>
                 </li>
-                <li class="tm-nav-item">
+                <li class="tm-nav-item" style="border-radius: 50px; border: none">
                     <a href="{% url 'information:stack' %}" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
                         <span class="cursor typewriter-animation">
                             Стек технологий
@@ -54,7 +49,7 @@
                         <i style="color: #6A5ACD" class="fa-solid fa-5x fa-microchip"></i>
                     </a>
                 </li>
-                <li class="tm-nav-item">
+                <li class="tm-nav-item" style="border-radius: 50px; border: none">
                     <a href="{% url 'cosmostore:index' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
                         <span class="cursor typewriter-animation">
                             Магазин
@@ -63,7 +58,7 @@
                     </a>
                 </li>
 
-                <li class="tm-nav-item">
+                <li class="tm-nav-item" style="border-radius: 50px; border: none">
                     <a href="{% url 'blog:blog' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
                         <span class="cursor typewriter-animation">
                             Бложик
@@ -72,7 +67,7 @@
                         <i style="color: #6A5ACD" class="fa-regular fa-5x fa-newspaper"></i>
                     </a>
                 </li>
-                <li class="tm-nav-item">
+                <li class="tm-nav-item" style="border-radius: 50px; border: none">
                     <a href="{% url 'information:contact' %}" data-effect="mfp-move-from-top" class="tm-nav-link">
                         <span class="cursor typewriter-animation">
                             Контакты

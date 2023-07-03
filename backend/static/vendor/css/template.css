@@ -121,9 +121,9 @@ a {
     width: 210px;
     height: 210px;
     padding: 30px;
-    border: 1px solid #D2D3D4;
     color: #FFFFFF;
     box-sizing: border-box;
+    border-radius: 30px;
 }
 
 .tm-nav-link:hover,
@@ -137,6 +137,7 @@ a {
 }
 
 .tm-main-nav ul {
+ 
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;

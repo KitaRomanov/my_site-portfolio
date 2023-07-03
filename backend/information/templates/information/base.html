@@ -16,6 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="{% static '/vendor/icon.png' %}" type="image/x-icon">
 
     {% block css %} {% endblock %}
 
@@ -47,9 +48,6 @@
 
 </body>
 
-    <footer style="background: #310062; padding: 20px">
-        <a  style="margin-left: 5%; font-size: 20px; color: white"> Сейчас {% now "j E H:i" %}, самое время пить чай.
-            <i class="fa-solid fa-mug-hot"></i> <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-lemon"></i> <i class="fa-solid fa-equals"></i> <i class="fa-solid fa-heart"></i></a>
-    </footer>
+
 
 </html>

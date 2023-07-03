@@ -9,10 +9,10 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-import environ
-import os
 
 from pathlib import Path
+
+import environ
 
 env = environ.Env(
     DEBUG=(bool),
@@ -63,18 +63,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
-    'rest_framework',
     'django_extensions',
+
+    'rest_framework',
+    'rest_framework.authtoken',
 
     'information',
     'blog',
     'store',
-    'users'
+    'users',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -226,4 +228,14 @@ SOCIALACCOUNT_PROVIDERS = {
             'user',
         ],
     }
+}
+
+# Rest_framework
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 6,
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
 }
