@@ -13,7 +13,7 @@ class ProductModelViewSet(ModelViewSet):
 
     def get_permissions(self):
         if self.action in ('create', 'update', 'destroy'):
-            self.permission_classes = IsAdminUser
+            self.permission_classes = (IsAdminUser,)
         return super(ProductModelViewSet, self).get_permissions()
 
 
