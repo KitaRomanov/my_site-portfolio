@@ -19,6 +19,7 @@ urlpatterns = [
     path('users/', include('users.urls', namespace='users')),
     path('accounts/', include('allauth.urls')),
     path('api/', include('api.urls', namespace='api')),
+    path('tools/', include('tools.urls', namespace='tools')),
     path('api-token-auth/', views.obtain_auth_token),
 ]
 

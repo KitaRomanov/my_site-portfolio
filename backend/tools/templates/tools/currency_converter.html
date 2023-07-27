@@ -1,0 +1,98 @@
+{% extends 'information/base.html' %}
+{% load static %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<section>
+<div align="center" style="margin-top: 200px" >
+    <div style="
+    width: 90%;
+    height: 110%;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.7)">
+        <form action="" method="POST" >
+            {% csrf_token %}
+            <br>
+            <p style="margin-top: -10px; font-family: FontName; margin-bottom: 0">Введите целое число</p>
+            <input type="text" name="summ" style="
+            border: 0;
+            outline: 0;
+            font: inherit;
+            width: 20em;
+            height: 3em;
+            background: rgba(255, 255, 255, 0.5);
+            color: black;
+            font-family: FontName;
+            border-radius: 10px;
+            box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            ">
+            <p style="margin-bottom: -25px; font-family: FontName; margin-top: 10px">Из какой валюты</p>
+
+            <select name="from-curr" id ="from_curr" style="
+              margin-top: 30px;
+              text-align: center;
+              border: 0;
+              width: 20em;
+              font-family: FontName;
+              height: 3em;
+              background: rgba(31, 4, 64, 0.8);
+              color: #6704c0;
+              border-radius: 10px;}" value="{{ from_curr }}">
+                {% for currency in currencies %}
+                    <option style="color: #6704c0; background: rgb(31,4,64)" value="{{ currency }}" {% if from_curr == currency %}selected{% endif %}>{{ currency }}</option>
+                {% endfor %}
+
+
+            </select>
+            <br>
+            <p style="margin-bottom: -25px; font-family: FontName; margin-top: 10px">В какую валюту</p>
+
+            <select id="to-curr" name="to-curr" value="{{ to_curr }}" style="
+              margin-top: 30px;
+              border: 0;
+              outline: 0;
+              font-family: FontName;
+              width: 20em;
+              height: 3em;
+              background: rgba(31, 4, 64, 0.8);
+              text-align: center;
+              color: #6704c0;
+              border-radius: 10px;
+              box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+              cursor: pointer;
+            }">
+            {% for currency in currencies %}
+                	<option style="color: #6704c0; background: rgb(31,4,64)" value="{{ currency }}" {% if to_curr == currency %}selected{% endif %}>{{ currency }}</option>
+            {% endfor %}
+            </select>
+
+            <br>
+            <button type="submit" style="
+            margin-top: 30px;
+            width : 40%;
+            height : 50px ;
+            border-radius: 60px;
+            background: none;
+            text-decoration : none ;
+            font-size : 20px ;
+            font-weight : bold ;
+            color :white ;
+            letter-spacing : 2px ;
+            transition : all .3s ease ;">
+                Расчитать</button>
+        </form>
+    {% if converted %}
+        <div style="border-radius: 30px; color: white; background: rgba(0,0,0,0.31); width: 90%; margin-top: 15px; font-family: FontName; font-size: 28px">
+        <p style="color: white">Получилось:</p>
+        {{ converted }}
+        </div>
+    {% endif %}
+
+    </div>
+</div>
+</section>
+{% endblock %}

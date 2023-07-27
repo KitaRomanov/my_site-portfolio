@@ -19,3 +19,6 @@ pyowm==3.3.0
 redis==4.6.0
 celery==5.3.1
 django-redis==5.3.0
+
+requests~=2.31.0
+djangoconvertvdoctopdf~=1.0.1

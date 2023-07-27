@@ -72,11 +72,14 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
 
+    'djangoconvertvdoctopdf',
+
     'information',
     'blog',
     'store',
     'users',
     'api',
+    'tools',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,45 @@
+{% extends 'information/base.html' %}
+{% load static %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<section>
+<div align="center" style="margin-top: 200px" >
+    <div style="
+    width: 90%;
+    height: 200px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.7)">
+        <br>
+        <p style="font-family: FontName; font-size: 20px; color: white">Выберите файл</p>
+        <form action="{% url 'tools:converter_to_pdf' %}" method="POST" enctype="multipart/form-data" >
+            {% csrf_token %}
+            {{ form }}
+
+
+            <br>
+            <button type="submit" style="
+            margin-top: 30px;
+            width : 100%;
+            max-width: 400px;
+            height : 100% ;
+            border-radius: 60px;
+            background: none;
+            text-decoration : none ;
+            font-size : 20px ;
+            font-weight : bold ;
+            color :white ;
+            letter-spacing : 2px ;
+            transition : all .3s ease ;">
+                Сконвертировать в .pdf</button>
+        </form>
+        </div>
+
+    </div>
+</div>
+<h3 align="center" style="color: rgba(248,6,6,0.98); font-family: FontName">{{ error_text }}</h3>
+</section>
+{% endblock %}

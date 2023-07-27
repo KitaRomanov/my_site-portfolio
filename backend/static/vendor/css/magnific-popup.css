@@ -72,10 +72,7 @@
   .mfp-close,
   .mfp-arrow,
   .mfp-preloader,
-  .mfp-counter {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none; }
+
   
   .mfp-loading.mfp-figure {
     display: none; }
